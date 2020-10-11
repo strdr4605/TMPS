@@ -1,4 +1,5 @@
 import Pbl from "./Pbl";
+import NoPbl from "./NoPbl";
 
 let instance = null;
 
@@ -11,7 +12,10 @@ export default class SingletonPblFactory {
     return instance;
   }
 
-  create(groupName) {
+  createPbl(groupName) {
     return new Pbl(groupName);
+  }
+  createNoPbl(groupName) {
+    return new NoPbl(groupName);
   }
 }

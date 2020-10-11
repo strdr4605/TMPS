@@ -56,13 +56,13 @@ let pblFactory2 = new SingletonPblFactory();
 console.log(`pblFactory1 === pblFactory2 ${pblFactory1 === pblFactory2}`); 
 // pblFactory1 === pblFactory2 true
 
-groups.push(pblFactory1.create('FAF-181'));
+groups.push(pblFactory1.createPbl('FAF-181'));
 ```
 
 [PblPrototype](https://github.com/Adrianasanduta/TMPS/blob/master/src/CreationalPatterns/PblPrototype.js) is class that has a prototype on creation and creates clones of [Pbl](https://github.com/Adrianasanduta/TMPS/blob/master/src/CreationalPatterns/Pbl.js).
 
 ```javascript
-let proto = pblFactory1.create('FAF-183 Prototype');
+let proto = pblFactory1.createPbl('FAF-183 Prototype');
 let prototype = new PblPrototype(proto);
 
 groups.push(prototype.clone());
