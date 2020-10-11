@@ -35,8 +35,8 @@ __4. Based on the previous point, implement atleast 3 creational design patterns
 
 ## My understanding of creational design patterns
 
-1. __Singleton__ - pattern which creates the same instance for every call.
-2. __Abstract Factory__ - pattern which creates objects of different types.
+1. __Singleton__ - pattern which returns the same instance for every call.
+2. __Abstract Factory__ - pattern which creates family of similar objects.
 3. __Prototype__ - pattern which allows to create an object using properties from a prototype.
 
 ## Domain area
