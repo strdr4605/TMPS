@@ -33,6 +33,16 @@ __3. Define the main involved classes and think about what instantiation mechani
 
 __4. Based on the previous point, implement atleast 3 creational design patterns in your project;__
 
+## My understanding of creational design patterns
+
+1. __Singleton__ - pattern which creates the same instance for every call.
+2. __Abstract Factory__ - pattern which creates objects of different types.
+3. __Prototype__ - pattern which allows to create an object using properties from a prototype.
+
+## Domain area
+
+I used as a domain the types of groups of universities as follows :  PBL and NoPbl.
+
 ## Implementation 
 
 I implemented 3 Creational Patterns (Abstract Factory, Singleton, Prototype) in JavaScript.  
