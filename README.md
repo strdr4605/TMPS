@@ -57,3 +57,7 @@ let prototype = new PblPrototype(proto);
 
 groups.push(prototype.clone());
 ```
+
+## The Output
+
+![image](https://user-images.githubusercontent.com/56167303/95679501-edc84300-0bdb-11eb-8969-0ce3b5ebdc9a.png)
