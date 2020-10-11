@@ -41,7 +41,7 @@ __4. Based on the previous point, implement atleast 3 creational design patterns
 
 ## Domain area
 
-I used as a domain the types of groups of universities as follows :  PBL and NoPbl.
+I used as a domain the types of groups of university as follows :  PBL and NoPbl.
 
 ## Implementation 
 
