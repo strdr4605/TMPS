@@ -49,3 +49,10 @@ groupProxy.getFieldInfo('groupName');
 groupProxy.getFieldInfo('moderator');
 groupProxy.getFieldInfo('groupName');
 groupProxy.getCount();
+
+const aplicant = new AplicantFacade('Madalina Sanduta');
+const result = aplicant.applyInGroup(decoratedPblGroup.groupName);
+if (result) {
+  decoratedPblGroup.addStudent(aplicant.name);
+}
+decoratedPblGroup.say();
