@@ -91,4 +91,38 @@ groupProxy.getFieldInfo('groupName');
 // groupName: FAF-181,FAF-182,FAF-171,FAF-172,TI-151,TI-151,TI-151,TI-151,FAF-183 Prototype,FAF-201
 groupProxy.getCount(); // Cache size: 2
 ```
+[AplicantFacade](src/StructuralPatterns/AplicantFacade.js) is a facade that uses classes with complex logic and is a bridge between them and user.  
 
+```javascript
+applyInGroup(groupName) {
+let result = true;
+if (!new Diploma().get(this.name)) {
+  result = false;
+} else if (!new BAC().verify(this.name)) {
+  result = false;
+} else if (!new Group().available(groupName)) {
+  result = false;
+}
+
+return result;
+}
+```
+
+Usage:
+
+```javascript
+const aplicant = new AplicantFacade('Madalina Sanduta');
+const result = aplicant.applyInGroup(decoratedPblGroup.groupName);
+if (result) {
+  decoratedPblGroup.addStudent(aplicant.name);
+}
+decoratedPblGroup.say();
+/* I am Decorated Pbl FAF-201,
+Moderator: Adriana Sanduta,
+Students:  [
+  'Adriana Sanduta',
+  'Sandrinia Saponari',
+  'Ilona Sanduta',
+  'Madalina Sanduta' */
+
+```
