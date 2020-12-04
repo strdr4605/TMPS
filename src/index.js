@@ -4,6 +4,7 @@ import PblPrototype from './CreationalPatterns/PblPrototype';
 import DecoratedPbl from './StructuralPatterns/DecorantedPbl';
 import GroupsProxy from './StructuralPatterns/GroupsProxy';
 import AplicantFacade from "./StructuralPatterns/AplicantFacade";
+import Iterator from './BehavioralPatterns/Iterator';
 
 const groups = [];
 const pblFactory1 = new SingletonPblFactory();
@@ -56,3 +57,7 @@ if (result) {
   decoratedPblGroup.addStudent(aplicant.name);
 }
 decoratedPblGroup.say();
+
+const iter = new Iterator(decoratedPblGroup.students);
+console.log("Iterating Students");
+iter.each(el => console.log("Student: " + el));
