@@ -16,13 +16,13 @@ __3. Implement some additional functionalities using behavioral design patterns;
 
 Some examples of this kind of design patterns are :
 
-   *Chain of Responsibility
-   *Command
-   *Interpreter
-   *Iterator
-   *Mediator
-   *Observer
-   *Strategy
+   * Chain of Responsibility
+   * Command
+   * Interpreter
+   * Iterator
+   * Mediator
+   * Observer
+   * Strategy
   
 
 ## Implementation 
@@ -33,7 +33,7 @@ I implemented 1 Behavioral Pattern (Iterator) in JavaScript.
 Iterator is a class that get as a parameter a list and can iterate through it.
 
 
-```
+```javascript
 first() {
   this.reset();
   return this.next();
@@ -59,7 +59,7 @@ each(callback) {
 ```
 Usage:
 
-```
+```javascript
 const iter = new Iterator(decoratedPblGroup.students);
 console.log("Iterating Students");
 iter.each(el => console.log("Student: " + el));
