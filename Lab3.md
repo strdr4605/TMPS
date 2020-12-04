@@ -6,9 +6,7 @@
 
 __1. Study and understand the Behavioral Design Patterns;__
 
-__2. As a continuation of the previous laboratory work, think about what communication between software entities might be involed in your system;
-  
-__
+__2. As a continuation of the previous laboratory work, think about what communication between software entities might be involed in your system;__
 
 __3. Implement some additional functionalities using behavioral design patterns;__
 
